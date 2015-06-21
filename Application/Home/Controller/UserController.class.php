@@ -33,7 +33,7 @@ class UserController extends Controller {
 		// 1  --- dian zan
 		// 2  --- add comment  
 		// 3  --- my bookNotes
-		// 4  -- 
+		// 4  --  my bookNotes
 		$this->assign('gogo', $error);
 		$this->display();
 	}
@@ -83,6 +83,9 @@ class UserController extends Controller {
 					break;
 				case '3':
 					redirect(U('Notes/myBookNotes'), 0, "go to myBookNotes");
+					break;
+				case '4':
+					redirect(U('Notes/myAllNotes'), 0, "go to myAllNotes");
 					break;
 				default:
 					redirect(U('User/index'), 0, 'go to user');

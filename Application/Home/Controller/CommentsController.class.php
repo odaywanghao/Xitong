@@ -30,12 +30,7 @@ class CommentsController extends Controller {
 		}	else {
 				$_SESSION['bookid'] = 1;
 				$bookId = 1;
-		}
-		// if (noLogin()) {
-		// 	// redirect(U('Index/login/'), 1, "no login");
-		// 	$this->error("未登录", U('Index/login/'), 3);
-		// }		
-		// $bookid_session = getBookid();		
+		}		
 		$username_session = getUsername();
 		$book = M('books');
 		$bookInfo = $book->find($bookId);
