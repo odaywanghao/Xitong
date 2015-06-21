@@ -11,35 +11,35 @@
 
 
 <h1>login out</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/logout/error/2">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/logout/error/2">
 <INPUT type="submit" value="登出">
 </FORM>
 
 <h1>my notes about this book</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/myBookNotes">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/myBookNotes">
 <INPUT type="submit" value="myBookNotes">
 </FORM>
 
 
 <h1>my all notes</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/myAllNotes">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/myAllNotes">
 <INPUT type="submit" value="myAllNotes">
 </FORM>
 
 
 <h1>add a note</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/addNote">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/addNote">
 <INPUT type="submit" value="add note">
 </FORM>
 
 <h1>all public notes</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/bookAllNotes">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/bookAllNotes">
 <INPUT type="submit" value="allNotes">
 </FORM>
 
 
 <h1>go to comments</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/gotoComments">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/gotoComments">
 <INPUT type="submit" value="go to comments">
 </FORM>
 
@@ -90,7 +90,7 @@
 		<!-- <td><?php echo ($allNotes[0][note]); ?></td> -->
 		<br/>
 <p>dsdsddsd  <?php echo ($allNotes[0][photo]); ?></p>
-		<img src = "/htdocs/think/Uploads/2015-06-20/<?php echo ($allNotes[0][photo]); ?>" alt = "yiya" title = "noto photo" />
+		<img src = "/Xitong/Uploads/NotePhotoes/<?php echo ($allNotes[0][photo]); ?>" alt = "yiya" title = "noto photo" />
 		<!-- <img src = "/think/Uploads/NotePhotoes/55850203c0c89.jpg" alt = "yiya" title = "noto photo" /> -->
 
 		<br/>

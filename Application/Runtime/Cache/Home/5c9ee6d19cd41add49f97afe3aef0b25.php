@@ -4,21 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>书语</title>
-  <link rel="stylesheet" href="/think/Public/css/bootstrap.css">
-  <link rel="stylesheet/less" href="/think/Public/css/common.less">
-  <script src="/think/Public/js/jquery-2.0.0.js"></script>
-  <script src="/think/Public/js/bootstrap.min.js"></script>
-  <script src="/think/Public/js/common.js"></script>
+  <link rel="stylesheet" href="/Xitong/Public/css/bootstrap.css">
+  <link rel="stylesheet/less" href="/Xitong/Public/css/common.less">
+  <script src="/Xitong/Public/js/jquery-2.0.0.js"></script>
+  <script src="/Xitong/Public/js/bootstrap.min.js"></script>
+  <script src="/Xitong/Public/js/common.js"></script>
 </head>
 
 <body>
   <div>
 
-    <link rel="stylesheet/less" type="text/css" href="/think/Public/css/login.less">
+    <link rel="stylesheet/less" type="text/css" href="/Xitong/Public/css/login.less">
 
 <div class="container">
   
-	<form class="form-inline" method="post" action="/think/index.php/Home/User/loginin/<?php echo ($gogo); ?>">
+	<form class="form-inline" method="post" action="/Xitong/index.php/Home/User/loginin/<?php echo ($gogo); ?>">
 		<div class="login_img"></div>
 
 	  <div class="form-group">
@@ -44,5 +44,5 @@
 
   </div>
 </body>
-  <script src="/think/Public/js/Less.js"></script>
+  <script src="/Xitong/Public/js/Less.js"></script>
 </html>

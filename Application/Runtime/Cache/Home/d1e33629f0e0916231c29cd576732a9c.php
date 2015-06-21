@@ -1,12 +1,12 @@
 <?php if (!defined('THINK_PATH')) exit();?><h1>all public notes</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/bookAllNotes">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/bookAllNotes">
 <INPUT type="submit" value="allNotes">
 </FORM>
 
 
 
  <h1>add note</h1>
-<FORM method="post" action="/think/index.php/Home/Notes/addNoteIn" enctype="multipart/form-data">
+<FORM method="post" action="/Xitong/index.php/Home/Notes/addNoteIn" enctype="multipart/form-data">
 chapter：<INPUT type="text" name="chapter"><br/>
 page：<INPUT type="text" name="page"><br/>
 <textarea name = 'note' id = 'note' cols="60" rows="10">添加新评论...</textarea>
