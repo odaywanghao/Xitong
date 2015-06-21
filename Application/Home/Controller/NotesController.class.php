@@ -158,29 +158,87 @@ class NotesController extends Controller {
 
 	}
 
-	public function editNote() {
-		$bookId = bookIdHere();
-		$bookInfo = bookInfoHere();
-		$username = getUsernme();
-		$note = D('notes');
-		if ($note->create()) {
-			$result = $note->add();
-			if ($result) {
-				// $this->success('数据添加成功');
-				redirect(U("Notes/index"), 0, "add comments success");
-			} else  {
-				$this->error('数据添加失败');
-			}
-		} else 	{
-			$this->error($note->getError());
+	public function editNote($noteId) {
+		if (noLogin()) {
+			redirect(U('User/login', array("error" => 4)), 0, "go to login");
 		}
+		if (!isset($noteId)) 	{
+			redirect(U('Notes/index'), 0, "error: no noteID");
+		}
+
+		$note = M('Notes');
+		$noteId_sql = "id = '$noteId'";
+		$noteData = $note->where("$noteId_sql")->find();
+		$this->assign('note', $noteData);
+		$this->display();
 
 	}
 
+
+	public function addNoteUp() {
+		if (noLogin()) {
+			redirect(U('User/login', array("error" => 3)), 0, "go to login");
+		}
+		// first identify login or not
+
+		$upload = new \Think\Upload();// 实例化上传类
+    	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+    	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+    	$upload->rootPath  =     './Uploads/NotePhotoes/'; // 设置附件上传根目录
+    	$upload->savePath  =     ''; // 设置附件上传（子）目录
+    	$upload->callback  = 	  true;
+    	$upload->autoSub 	 = 	false;
+    // 上传文件 
+    	$info   =   $upload->upload();
+    	if(!$info) {// 上传错误提示错误信息
+        	// $this->error($upload->getError());
+        	$error = $upload->getError();
+        	if ($error == "没有文件被上传！") {
+        		$photo = NULL;
+        	}	else {
+        			$this->error($upload->getError);
+        	}
+    	}else{// 上传成功
+	        // $this->success("add photo");
+	        $photo = $info['photo']['savename'];
+    	}
+
+		$bookid_session = getBookid();		
+		if (isset($bookid_session)) {
+			$bookId = $bookid_session;
+		}	else {
+				// $_SESSION['bookid'] = 1;
+				// $bookId = 1;
+				redirect(U('Notes/index'), 0, 'bookid miss, go back to the index');
+		}
+		// get bookId
+
+		$book = M('books');
+		$bookInfo = $book->find($bookId);
+		// get book information
+		$username = getUsername();
+		$data['bookid'] = $bookId;
+		$data['username'] = $username;
+		$data['id'] = I('post.id');
+		$data['chapter'] = I('post.chapter');
+		$data['page'] = I('post.page');
+		$data['note'] = I('post.note');
+		$data['photo'] = $photo;
+		$data['public'] = I('post.public');
+		$data['create_time'] = NOW_TIME;
+		// var_dump($data);
+		$noteModel = M('notes');
+		$noteModel->save($data);
+		redirect(U('Notes/myAllNotes'), 0, "add success, go to see my all notes");
+
+	}
 
 	public function logout($error = 0) {
 		redirect(U("User/logout", array('error' => $error)), 0, "log out");
 	}
+
+
+
 
 
 // array(1) { 
@@ -196,37 +254,6 @@ class NotesController extends Controller {
 // 		["savepath"]=> string(11) "2015-06-20/" 
 // 	} 
 // 	}
-
-	public function upload(){
-    $upload = new \Think\Upload();// 实例化上传类
-    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-    $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-    $upload->rootPath  =     './Uploads/NotePhotoes/'; // 设置附件上传根目录
-    $upload->savePath  =     ''; // 设置附件上传（子）目录
-    $upload->callback  = 	  true;
-    $upload->autoSub 	= 	false;
-    // 上传文件 
-    $info   =   $upload->upload();
-    if(!$info) {// 上传错误提示错误信息
-        // $this->error($upload->getError());
-        // echo $upload->getError();
-        if ($upload->getError() == "没有文件被上传！") {
-        	$this->assign('error', "oooo");
-        }	else {
-        		$this->assign('error', $upload->getError());
-        }
-        $this->display();
-    }else{// 上传成功
-  //   	foreach($info as $key) 
-		// { 
-		// 　　echo $key; 
-		// } 
-		// var_dump($info);
-		echo $info['photo']['name'];
-		echo "hello";
-        // $this->success("add photo");
-    }
-}
 
 
 
