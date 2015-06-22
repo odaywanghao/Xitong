@@ -1,6 +1,5 @@
 <?php
 	$user = getUsername();
-	$time = date("Y-m-d ", $allNotes[0][create_time]);
 ?>
 
 <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/bookAllNotes.less">
@@ -27,9 +26,7 @@
 			<div class="NoteInfo">
 				<p>{$allNotes[$i][note]}</p>
 				<img src="/Xitong/Uploads/NotePhotoes/{$allNotes[$i][photo]}" alt=".">
-				<!-- <span><?echo date("Y-m-d ", $allNotes[$i]['create_time'])?></span> -->
-				<span>{$time}</span>
-
+				<span><?php echo date("Y-m-d ", $allNotes[$i][create_time]) ?></span>
 			</div>
 		</div>
 	</for>
