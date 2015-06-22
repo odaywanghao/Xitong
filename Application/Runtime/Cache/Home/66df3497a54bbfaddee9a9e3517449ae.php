@@ -1,21 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>书语</title>
-  <link rel="stylesheet" href="/Xitong/Public/css/bootstrap.css">
-  <link rel="stylesheet/less" href="/Xitong/Public/css/common.less">
-  <script src="/Xitong/Public/js/jquery-2.0.0.js"></script>
-  <script src="/Xitong/Public/js/bootstrap.min.js"></script>
-  <script src="/Xitong/Public/js/common.js"></script>
-</head>
-
-<body>
-  <div>
-
-    <?php
- $user = getUsername(); ?>
+<?php if (!defined('THINK_PATH')) exit(); $user = getUsername(); $time = date("Y-m-d ", $allNotes[0][create_time]); ?>
 
 <head>all notes information</head>
 <h1> user </h1>
@@ -114,11 +97,12 @@
 	</tr>
 	<tr>
 		<td>create_tiem:</td>
-		<td><?php echo ($allNotes[0][create_time]); ?></td>
+		<td><?php echo ($time); ?></td>
 	</tr>
-</table>
 
-  </div>
-</body>
-  <script src="/Xitong/Public/js/Less.js"></script>
-</html>
+<h1>adite Note</h1>
+<FORM method="post" action="/Xitong/index.php/Home/Notes/editNote/noteId/<?php echo ($allNotes[0][id]); ?>">
+<INPUT type="submit" value="aditeNote">
+</FORM>
+
+</table>

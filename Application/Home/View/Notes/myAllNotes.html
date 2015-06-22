@@ -1,5 +1,6 @@
 <?php
 	$user = getUsername();
+	$time = date("Y-m-d ", $allNotes[0][create_time]);
 ?>
 
 <head>all notes information</head>
@@ -99,7 +100,7 @@
 	</tr>
 	<tr>
 		<td>create_tiem:</td>
-		<td>{$allNotes[0][create_time]}</td>
+		<td>{$time}</td>
 	</tr>
 
 <h1>adite Note</h1>

@@ -1,27 +1,38 @@
-<h1>my all notes</h1>
-<FORM method="post" action="__URL__/myAllNotes">
-<INPUT type="submit" value="myAllNotes">
-</FORM>
+<?php
+	$user = getUsername();
+?>
 
+<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/addNote.less">
+<include file="Common/header" />
 
-
- <h1>add note</h1>
-<FORM method="post" action="__URL__/addNoteUp" enctype="multipart/form-data">
-<INPUT type="hidden" name="id" value="{$note[id]}">
-chapter：<INPUT type="text" name="chapter"  value= {$note[chapter]}><br/></INPUT>
-page：<INPUT type="text" name="page" value = {$note[page]}><br/>
-<textarea name = 'note' id = 'note' cols="60" rows="10">{$note[note]}</textarea>
-<br/>
-<label>public:</label>
-    <label>所有人可见</label>
-    <input type="radio" value="1"  name="public" />
-    <label>仅自己可见</label>
-    <input type="radio" value="0"  name="public" />
-<br/>
-<img src = "/Xitong/Uploads/NotePhotoes/{$note[photo]}" alt = "yiya" title = "noto photo" />
-<br/>	
-<input type="file" name="photo" />add photo
-
-<br/>
-<INPUT type="submit" value="提交">
-</FORM>
+<div class="container">
+	<h5>修改笔记</h5>
+	<form method="post" action="__URL__/addNoteUp" enctype="multipart/form-data">
+		<div>
+			<input type="hidden" name="id" value="{$note[id]}" />
+		</div>
+		<div>
+			<label for="chapter">章节</label>
+			<input type="text" name="chapter" value="{$note[chapter]}" />
+		</div>
+		<div>
+			<label for="page">页码</label>
+			<input type="text" name="page" value="{$note[page]}" />
+		</div>
+		<div>
+			<label for="note">内容</label>
+			<textarea name='note' id='note' rows="6" value="{$note[note]}"></textarea>
+		</div>
+		<div>
+			<label for="public">是否公开</label>
+			<input type="radio" value="1" name="public" checked="checked" />所有人可见
+			<input type="radio" value="0" name="public" />自仅己可见
+		</div>
+		<div>
+			<img src="/Xitong/Uploads/NotePhotoes/{$note[photo]}" alt=".">
+			<label for="photo">上传图片</label>
+			<input type="file" name="photo" />
+		</div>
+		<input type="submit" value="修 改">
+	</form>
+</div>
