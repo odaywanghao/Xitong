@@ -8,6 +8,19 @@ class CommentsController extends Controller {
 		// redirect(U('Index/comments'), 0, "redirect to comments");
 		// echo "hello world";
 	}
+
+	public function myAllNotes() {
+		redirect(U('Notes/myAllNotes'), 0, 'redirect to myAllNotes');
+	}
+
+	public function allNotes()  {
+		redirect(U('Notes/allNotes'), 0, 'redirect to allNotes');
+	}
+
+	public function allBooks()  {
+		redirect(U('Books/allBooks'), 0, 'redirect to all Books');
+	}
+	
 	function bookAllNotes() {
 		redirect(U('Notes/bookAllNotes'), 0, "go to bookAllNotes");
 	}

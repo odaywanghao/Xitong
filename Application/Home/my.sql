@@ -1,13 +1,16 @@
+drop table if EXISTS  `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint(0) unsigned NOT NULL AUTO_INCREMENT,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
+  `create_time`  int(11) NOT NULL,
   PRIMARY KEY (`id`)
  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 
 
 
+drop table if EXISTS `books`;
 CREATE TABLE IF NOT EXISTS `books` (
   `id` bigint(10) unsigned NOT NULL AUTO_INCREMENT,
   `bookname` varchar(100) NOT NULL,
@@ -17,6 +20,7 @@ CREATE TABLE IF NOT EXISTS `books` (
   `summary` varchar(255) NOT NULL,
   `picture` varchar(255) ,
   `bookzan` bigint(10) unsigned NOT NULL,
+  `create_time`  int(11) NOT NULL,
   PRIMARY KEY (`id`)
  ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 ;
 

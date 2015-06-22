@@ -7,6 +7,13 @@ class BooksController extends Controller {
 		redirect(U('Books/allBooks'), 0, "redirect to allBooks");
 	}
 
+	public function myAllNotes() {
+		redirect(U('Notes/myAllNotes'), 0, 'redirect to myAllNotes');
+	}
+
+	public function allNotes()  {
+		redirect(U('Notes/allNotes'), 0, 'redirect to allNotes');
+	}
 
 	public function allBooks() {
 		$bookModel = M('books');

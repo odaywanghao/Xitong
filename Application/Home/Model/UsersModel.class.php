@@ -12,5 +12,10 @@ class usersModel extends Model {
 		array('email', 'require', 'email必须！'),
 		array('email', '', '该邮箱已经被使用', 0, 'unique'),
 	);
+
+	protected $_auto    =   array(
+        array('create_time','time',1,'function'),
+    );
+    // 定义自动完成
     // 定义自动完成
  }
