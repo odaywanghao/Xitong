@@ -26,8 +26,10 @@
 			</div>
 			<div class="NoteInfo">
 				<p>{$allNotes[$i][note]}</p>
-				<img src="/Xitong/Uploads/NotePhotoes/{$allNotes[0][photo]}" alt=".">
+				<img src="/Xitong/Uploads/NotePhotoes/{$allNotes[$i][photo]}" alt=".">
+				<!-- <span><?echo date("Y-m-d ", $allNotes[$i]['create_time'])?></span> -->
 				<span>{$time}</span>
+
 			</div>
 		</div>
 	</for>

@@ -1,0 +1,19 @@
+countBooks:{$countBooks}
+<br/>
+
+<h1>first book information</h1>
+bookname:{$allBooks[0][bookname]}
+
+
+<FORM method="post" action="__URL__/lookComments">
+<INPUT type="hidden" name="id" value="{$allBooks[0][id]}">
+<br/>
+<INPUT type="submit" value="lookComents">
+</FORM>
+
+
+<FORM method="post" action="__URL__/lookNotes">
+<INPUT type="hidden" name="id" value="{$allBooks[0][id]}">
+<br/>
+<INPUT type="submit" value="lookNotes">
+</FORM>
