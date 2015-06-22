@@ -43,6 +43,21 @@ class NotesController extends Controller {
 
 	}
 
+	public function allNotes() {
+
+		$bookAllNotes = M('notes');
+		$book_all_users_notes_public = "public = 1";
+		$allNotes = $bookAllNotes->where("$book_all_users_notes_public")->order('create_time desc')->select();
+		
+		$allNotesCount = count($allNotes);
+		$this->assign('allNotes', $allNotes);
+		$this->assign('allNotesCount', $allNotesCount);
+		// zhoushx
+		$this.layout(true);
+		$this->display(bookAllNotes);
+
+	}
+
 	public function myBookNotes()  {
 		if (noLogin()) {
 			redirect(U('User/login', array("error" => 3)), 0, "go to login");
@@ -169,13 +184,16 @@ class NotesController extends Controller {
 			redirect(U('User/login', array("error" => 4)), 0, "go to login");
 		}
 		if (!isset($noteId)) 	{
-			redirect(U('Notes/index'), 0, "error: no noteID");
+					echo $noteId;
+
+			// redirect(U('User/index'), 0, "error: no noteID");
 		}
 
 		$note = M('Notes');
 		$noteId_sql = "id = '$noteId'";
 		$noteData = $note->where("$noteId_sql")->find();
 		$this->assign('note', $noteData);
+		$this.layout(true);
 		$this->display();
 
 	}

@@ -14,6 +14,7 @@ class BooksController extends Controller {
 		$countBooks = count($allBooks);
 		$this->assign('allBooks', $allBooks);
 		$this->assign('countBooks', $countBooks);
+		$this.layout(true);
 		$this->display();
 	}
 

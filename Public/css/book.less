@@ -1,0 +1,48 @@
+#bookList {
+	padding-top: 10px;
+	& > h5 {
+		display: block;
+		width: 150px;
+		text-align: center;
+		margin: 0 auto;
+		border: none;
+	}
+
+	#book {
+		padding-bottom: 5px;
+		border-bottom: 2px dotted #aaa;
+		img {
+			max-width: 150px;
+			max-height: 250px;
+			width: 30%;
+			height: 100px;
+			margin-right: 10px;
+			display: inline-block;
+			vertical-align: top;
+		}
+		div#bookInfo {
+			display: inline-block;
+			width: 60%;
+			p span {
+				color: #453BD7;
+				font-weight: bold;
+			}
+		}
+		.form {
+			display: flex;
+			width: 100%;
+			form {
+				flex: 1;
+				input[type="submit"] {
+					color: #5B51F0;
+					float: right;
+					border: none;
+					background: none;
+				}
+				&:first-child input[type="submit"] {
+					float: left;
+				}
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('a.showMore').click(function(event) {
 		var posL = $(this).offset().left;
 		var posT = $(this).offset().top;
-		$('.hidden_menu').toggleClass('active').offset({top: posT + 21, left: posL - 33});
+		$('.hidden_menu').toggleClass('active').offset({top: posT + 31, left: posL - 28});
 	});
 
 });
