@@ -44,7 +44,7 @@ class BackGroundController extends Controller {
 
 
 		for ($ite = 1; $ite < 16; $ite++) {
-			$everyDayCount_sql = "create_time > ('$now_time' - ('$ite' * 86400))";
+			$everyDayCount_sql = "create_time > ('$now_time' - ('$ite' * 86400)) and create_time < ('$now_time' - (('$ite'-1) * 86400))";
 			$noteEveryCount[$ite] =  $noteModel->where("$everyDayCount_sql")->count();
 			$commentEveryCount[$ite] =  $noteModel->where("$everyDayCount_sql")->count();
 			$bookEveryCount[$ite] =  $bookModel->where("$everyDayCount_sql")->count();

@@ -15,7 +15,6 @@ class NotesController extends Controller {
 	public function allBooks()  {
 		redirect(U('Books/allBooks'), 0, 'redirect to all Books');
 	}
-	
 
 
 	public function bookAllNotes() {
@@ -93,6 +92,10 @@ class NotesController extends Controller {
 	}
 
 	public function myAllNotes()  {
+		if (noLogin()) {
+			redirect(U('User/login', array("error" => 4)), 0, "go to login");
+		}
+
 		$username = getUsername();
 		$book = M('books');
 		$bookInfo = $book->find($bookId);

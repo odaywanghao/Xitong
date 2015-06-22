@@ -15,6 +15,10 @@ class BooksController extends Controller {
 		redirect(U('Notes/allNotes'), 0, 'redirect to allNotes');
 	}
 
+	public function logout() 	{
+		redirect(U('User/logout'), 0, "log out");
+	}
+
 	public function allBooks() {
 		$bookModel = M('books');
 		$allBooks = $bookModel->order('id')->select();
