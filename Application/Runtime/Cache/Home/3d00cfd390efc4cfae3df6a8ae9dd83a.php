@@ -46,7 +46,7 @@
 <div class="container" id="bookList">
 	<!-- 书的列表 -->
 	<h5>书的列表</h5>
-	<?php $__FOR_START_1385012612__=0;$__FOR_END_1385012612__=$countBooks;for($i=$__FOR_START_1385012612__;$i < $__FOR_END_1385012612__;$i+=1){ ?><div id="book">
+	<?php $__FOR_START_1026619237__=0;$__FOR_END_1026619237__=$countBooks;for($i=$__FOR_START_1026619237__;$i < $__FOR_END_1026619237__;$i+=1){ ?><div id="book">
 			<h5><?php echo ($allBooks[$i][bookname]); ?></h5>
 			<img src="<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'/Xitong/Public/img/1.jpg'); ?>">
 			<div id="bookInfo">

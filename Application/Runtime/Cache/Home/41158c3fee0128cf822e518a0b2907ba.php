@@ -54,7 +54,7 @@
 
 	<!-- 笔记列表 -->
 	<h5>笔记列表</h5>
-	<?php $__FOR_START_1530217604__=0;$__FOR_END_1530217604__=$allNotesCount;for($i=$__FOR_START_1530217604__;$i < $__FOR_END_1530217604__;$i+=1){ ?><div class="bookAllNotesList">
+	<?php $__FOR_START_78563188__=0;$__FOR_END_78563188__=$allNotesCount;for($i=$__FOR_START_78563188__;$i < $__FOR_END_78563188__;$i+=1){ ?><div class="bookAllNotesList">
 			<div class="NoteBasic">
 				<a href="profile">用户: <?php echo ($allNotes[$i][username]); ?></a>
 				<p>章节:  <?php echo ($allNotes[$i][chapter]); ?></p>

@@ -73,7 +73,7 @@
 
 	<!-- 书评列表 -->
 	<h5>书评列表</h5>
-	<?php $__FOR_START_1172658887__=0;$__FOR_END_1172658887__=$commentsCount;for($i=$__FOR_START_1172658887__;$i < $__FOR_END_1172658887__;$i+=1){ ?><div class="commentsList">
+	<?php $__FOR_START_901739597__=0;$__FOR_END_901739597__=$commentsCount;for($i=$__FOR_START_901739597__;$i < $__FOR_END_901739597__;$i+=1){ ?><div class="commentsList">
 			<img src="<?php echo ((isset($userHead ) && ($userHead !== ""))?($userHead ):'/Xitong/Public/img/1.jpg'); ?>" alt="用户头像" />
 			<div>
 				<a href="#"><?php echo ($commentsList[$i][username]); ?></a>
