@@ -32,6 +32,7 @@ class NotesController extends Controller {
 		$bookAllNotes = M('notes');
 		$book_all_users_notes_public = "bookid = '$bookId' and public = 1";
 		$allNotes = $bookAllNotes->where("$book_all_users_notes_public")->order('create_time desc')->select();
+		
 		$allNotesCount = count($allNotes);
 		$this->assign('allNotes', $allNotes);
 		$this->assign('bookInfo', $bookInfo);
