@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>书语</title>
-  <link rel="stylesheet" href="/Xitong/Public/css/bootstrap.css">
-  <link rel="stylesheet/less" href="/Xitong/Public/css/common.less">
-  <script src="/Xitong/Public/js/jquery-2.0.0.js"></script>
-  <script src="/Xitong/Public/js/bootstrap.min.js"></script>
-  <script src="/Xitong/Public/js/common.js"></script>
+  <link rel="stylesheet" href="/newxx/Public/css/bootstrap.css">
+  <link rel="stylesheet/less" href="/newxx/Public/css/common.less">
+  <script src="/newxx/Public/js/jquery-2.0.0.js"></script>
+  <script src="/newxx/Public/js/bootstrap.min.js"></script>
+  <script src="/newxx/Public/js/common.js"></script>
 </head>
 
 <body>
@@ -28,35 +28,35 @@
 
 
 <h1>login out</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/logout/error/2">
+<FORM method="post" action="/newxx/index.php/Home/Notes/logout/error/2">
 <INPUT type="submit" value="登出">
 </FORM>
 
 <h1>my notes about this book</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/myBookNotes">
+<FORM method="post" action="/newxx/index.php/Home/Notes/myBookNotes">
 <INPUT type="submit" value="myBookNotes">
 </FORM>
 
 
 <h1>my all notes</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/myAllNotes">
+<FORM method="post" action="/newxx/index.php/Home/Notes/myAllNotes">
 <INPUT type="submit" value="myAllNotes">
 </FORM>
 
 
 <h1>add a note</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/addNote">
+<FORM method="post" action="/newxx/index.php/Home/Notes/addNote">
 <INPUT type="submit" value="add note">
 </FORM>
 
 <h1>all public notes</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/bookAllNotes">
+<FORM method="post" action="/newxx/index.php/Home/Notes/bookAllNotes">
 <INPUT type="submit" value="allNotes">
 </FORM>
 
 
 <h1>go to comments</h1>
-<FORM method="post" action="/Xitong/index.php/Home/Notes/gotoComments">
+<FORM method="post" action="/newxx/index.php/Home/Notes/gotoComments">
 <INPUT type="submit" value="go to comments">
 </FORM>
 
@@ -120,5 +120,5 @@
 
   </div>
 </body>
-  <script src="/Xitong/Public/js/Less.js"></script>
+  <script src="/newxx/Public/js/Less.js"></script>
 </html>
