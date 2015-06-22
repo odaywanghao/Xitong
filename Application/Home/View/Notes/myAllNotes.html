@@ -19,7 +19,7 @@
 				<p>{$allNotes[$i][note]}</p>
 				<img src="/Xitong/Uploads/NotePhotoes/{$allNotes[$i][photo] | default='55850c7b8b5b3.jpg'}" alt=".">
 				<span><?php echo date("Y-m-d ", $allNotes[$i][create_time]) ?></span>
-				<form method="post" action="__URL__/editNote/noteId/{$allNotes[$i][id]})">
+				<form method="post" action="__URL__/editNote/noteId/{$allNotes[$i][id]}">
 					<input type="submit" value="修改">
 				</form>
 			</div>

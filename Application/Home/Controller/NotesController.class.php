@@ -12,6 +12,12 @@ class NotesController extends Controller {
 		redirect(U('Comments/index'), 0, "go to comments");
 	}
 
+	public function allBooks()  {
+		redirect(U('Books/allBooks'), 0, 'redirect to all Books');
+	}
+	
+
+
 	public function bookAllNotes() {
 		// if (noLogin()) {
 		// 	redirect(U('User/login', array("error" => 3)), 0, "go to login");
