@@ -1,5 +1,6 @@
 <?php
 	$user = getUsername();
+	$time = date("Y-m-d ", $allNotes[0][create_time]);
 ?>
 
 <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/bookAllNotes.less">
@@ -17,28 +18,17 @@
 	<!-- 笔记列表 -->
 	<h5>笔记列表</h5>
 	<for start="0" end="$allNotesCount">
-		<div class="commentsList">
-			<img src="{$userHead | default='__PUBLIC__/img/1.jpg'}" alt="用户头像" />
-			<div>
-				<a href="#">{$allNotes[$i][username]}</a>
-				<p>{$allNotes[$i][page]}</p>
-				<p>{$allNotes[$i][chapter]}</p>
+		<div class="bookAllNotesList">
+			<div class="NoteBasic">
+				<a href="profile">用户: {$allNotes[$i][username]}</a>
+				<p>章节:  {$allNotes[$i][chapter]}</p>
+				<p>页码:  {$allNotes[$i][page]}</p>
+			</div>
+			<div class="NoteInfo">
 				<p>{$allNotes[$i][note]}</p>
 				<img src="/Xitong/Uploads/NotePhotoes/{$allNotes[0][photo]}" alt=".">
-				<span>{$allNotes[$i][create_time]}</span>
+				<span>{$time}</span>
 			</div>
 		</div>
 	</for>
-	<div class="bookAllNotesList">
-		<div class="NoteBasic">
-			<a href="profile">用户: 阿三</a>
-			<p>章节:  十</p>
-			<p>页码:  80</p>
-		</div>
-		<div class="NoteInfo">
-			<p>这是一个神奇的国度, 然后这又跟我有什么关系呢?</p>
-			<img src="__PUBLIC__/img/1.jpg" alt=".">
-			<span>2014 - 4 - 4</span>
-		</div>
-	</div>
 </div>
