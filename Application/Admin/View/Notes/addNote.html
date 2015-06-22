@@ -1,0 +1,34 @@
+<?php
+	$user = getUsername();
+?>
+
+<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/addNote.less">
+<include file="Common/header" />
+
+<div class="container">
+	<h5>添加新笔记</h5>
+	<form method="post" action="__URL__/addNoteIn" enctype="multipart/form-data">
+		<div>
+			<label for="chapter">章节</label>
+			<input type="text" name="chapter" placeholder="一" />
+		</div>
+		<div>
+			<label for="page">页码</label>
+			<input type="text" name="page" placeholder="1" />
+		</div>
+		<div>
+			<label for="note">内容</label>
+			<textarea name='note' id='note' rows="6" placeholder="......笔记......"></textarea>
+		</div>
+		<div>
+			<label for="public">是否公开</label>
+			<input type="radio" value="1" name="public" checked="checked" />所有人可见
+			<input type="radio" value="0" name="public" />自仅己可见
+		</div>
+		<div>
+			<label for="photo">上传图片</label>
+			<input type="file" name="photo" />
+		</div>
+		<input type="submit" value="提交">
+	</form>
+</div>

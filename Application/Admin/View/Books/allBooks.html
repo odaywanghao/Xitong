@@ -1,0 +1,36 @@
+<?php
+	$user = getUsername();
+?>
+
+<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/book.less">
+<include file="Common/header" />
+
+<div class="container" id="bookList">
+	<!-- 书的列表 -->
+	<h5>书的列表</h5>
+	<for start="0" end="$countBooks">
+		<div id="book">
+			<h5>{$allBooks[$i][bookname]}</h5>
+			<img src="{$allBooks[$i][picture] | default='__PUBLIC__/img/1.jpg'}">
+			<div id="bookInfo">
+				<p><span>作&ensp;者:</span> {$allBooks[$i][author]}</p>
+				<p><span>出版社:</span> {$allBooks[$i][press]}</p>
+				<p><span>ISBN:</span> {$allBooks[$i][isbn]}</p>		
+				<p class="bookSummary"><span>内容简介:</span> {$allBooks[$i][summary]}</p>
+			</div>
+			<div class="form">
+				<form method="post" action="__URL__/lookComments">
+					<input type="hidden" name="id" value="{$allBooks[0][id]}" />
+					<input type="submit" value="<<< 查看书评" />
+				</form>
+				<form method="post" action="__URL__/lookNotes">
+					<input type="hidden" name="id" value="{$allBooks[0][id]}" />
+					<input type="submit" value="查看笔记 >>>" />
+				</form>
+			</div>
+		</div>
+
+		
+	</for>
+
+</div>
