@@ -84,6 +84,7 @@ class NotesController extends Controller {
 		$this->assign('allNotes', $allNotes);
 		$this->assign('bookInfo', $bookInfo);
 		$this->assign('allNotesCount', $allNotesCount);
+		$this.layout(true);
 		$this->display();
 	}
 
