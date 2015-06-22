@@ -1,0 +1,26 @@
+
+<link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/common.less">
+
+<div id="header">
+	<p>
+		<a href="User/login">{$user | default="未登录"}</a>
+		<notempty name="user">
+			<a href="__URL__/logout">登出</a>
+		</notempty>
+		<a class="showMore" href="#">更多</a>
+	</p>
+	<ul class="hidden_menu">
+		<li>
+			<a class="clickNote" href="__URL__/myAllNotes">我的笔记</a>
+		</li>
+		<li>
+			<a class="clickNote" href="__URL__/allNotes">所有笔记</a>
+		</li>
+		<li>
+			<a class="clickNote" href="__URL__/allBooks">所有书目</a>
+		</li>
+	</ul>
+</div>
+
+
+	

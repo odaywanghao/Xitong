@@ -1,0 +1,667 @@
+[ 2015-06-22T17:41:00+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+ERR: 无法加载控制器:Comments
+
+[ 2015-06-22T17:42:59+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000204s ]
+ERR: 无法加载控制器:Comments
+
+[ 2015-06-22T17:44:04+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000162s ]
+NOTIC: [4096] Object of class Admin\Controller\CommentsController could not be converted to string /var/www/Xitong/Application/Admin/Controller/CommentsController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `books` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `comments` WHERE ( bookid = '1' ) ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `bookzan` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( bookid = '1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( username = '111' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant comments - assumed 'comments' /var/www/Xitong/Application/Admin/Controller/CommentsController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Use of undefined constant bookname - assumed 'bookname' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 49 行.
+NOTIC: [8] Use of undefined constant picture - assumed 'picture' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 50 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 52 行.
+NOTIC: [8] Use of undefined constant press - assumed 'press' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 53 行.
+NOTIC: [8] Use of undefined constant isbn - assumed 'isbn' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 54 行.
+NOTIC: [8] Use of undefined constant summary - assumed 'summary' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 61 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Admin/123df4b8b4958faf8090cb2838dbdbf5.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-06-22T17:45:13+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-06-22T17:45:13+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround/backInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966313' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966313' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966313' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966313' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: userCount /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: bookCount /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 59 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Use of undefined constant password - assumed 'password' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Use of undefined constant email - assumed 'email' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: noteAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 9 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 11 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 12 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 13 行.
+NOTIC: [8] Undefined variable: bookAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 16 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 18 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 19 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 20 行.
+NOTIC: [8] Undefined variable: commentAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 27 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 29 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 30 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2015-06-22T17:46:12+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround/backInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: Last1Monthount_sql /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Array to string conversion /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 2 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Use of undefined constant password - assumed 'password' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Use of undefined constant email - assumed 'email' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: noteAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 9 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 11 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 12 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 13 行.
+NOTIC: [8] Undefined variable: bookAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 16 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 18 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 19 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 20 行.
+NOTIC: [8] Undefined variable: commentAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 27 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 29 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 30 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2015-06-22T17:46:12+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround/backInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: Last1Monthount_sql /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Array to string conversion /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 2 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Use of undefined constant password - assumed 'password' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Use of undefined constant email - assumed 'email' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: noteAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 9 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 11 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 12 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 13 行.
+NOTIC: [8] Undefined variable: bookAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 16 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 18 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 19 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 20 行.
+NOTIC: [8] Undefined variable: commentAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 27 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 29 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 30 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2015-06-22T17:46:12+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround/backInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: Last1Monthount_sql /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Array to string conversion /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 2 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Use of undefined constant password - assumed 'password' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Use of undefined constant email - assumed 'email' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: noteAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 9 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 11 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 12 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 13 行.
+NOTIC: [8] Undefined variable: bookAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 16 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 18 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 19 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 20 行.
+NOTIC: [8] Undefined variable: commentAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 27 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 29 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 30 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-06-22T17:46:13+08:00 ] 127.0.0.1 /Xitong/index.php/Admin/BackGround/backInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: Last1Monthount_sql /var/www/Xitong/Application/Admin/Controller/BackGroundController.class.php 第 35 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `books` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comments` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - 86400) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  604800) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' -  2592000) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('1' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('2' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('3' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('4' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('5' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('6' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('7' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('8' * 86400)) ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('9' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('10' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('11' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('12' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('13' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('14' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `notes` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `books` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE ( create_time > ('1434966372' - ('15' * 86400)) ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+NOTIC: [8] Array to string conversion /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 2 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 4 行.
+NOTIC: [8] Use of undefined constant password - assumed 'password' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 5 行.
+NOTIC: [8] Use of undefined constant email - assumed 'email' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: userAll /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 6 行.
+NOTIC: [8] Undefined variable: noteAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 9 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 11 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 12 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 13 行.
+NOTIC: [8] Undefined variable: bookAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 16 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 18 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 19 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 20 行.
+NOTIC: [8] Undefined variable: commentAllCount /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 27 行.
+NOTIC: [8] Use of undefined constant day - assumed 'day' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 29 行.
+NOTIC: [8] Use of undefined constant week - assumed 'week' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 30 行.
+NOTIC: [8] Use of undefined constant month - assumed 'month' /var/www/Xitong/Application/Runtime/Cache/Admin/1e91f8dbf6ab5053f684934e7abeaef2.php 第 31 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
