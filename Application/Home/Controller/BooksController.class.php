@@ -7,6 +7,7 @@ class BooksController extends Controller {
 		redirect(U('Books/allBooks'), 0, "redirect to allBooks");
 	}
 
+
 	public function allBooks() {
 		$bookModel = M('books');
 		$allBooks = $bookModel->order('id')->select();
