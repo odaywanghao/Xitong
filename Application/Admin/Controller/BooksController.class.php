@@ -99,21 +99,47 @@ class BooksController extends Controller {
 		$this->display();
 	}
 
-	public function lookComments($id=1) {
+	public function lookComments() {
+		$this.layout(true);
+
 		$id = I('post.id');
-		// echo $id;
-		redirect(U('Comments/comments', array('bookId' => $id)), 0, 'go to look Notes');
-	}
+		$book = M('books');
+		$bookInfo = $book->find($id);
+
+		$comments = M('comments');
+		$comments_match_bookid_sql = "bookid = '$id'";
+		$commentsList = $comments->where("$comments_match_bookid_sql")->order('create_time desc')->select();
+		$commentsCount = count($commentsList);
+
+		if ($bookInfo) {
+			$this->assign('bookInfo', $bookInfo);
+			$this->assign("commentsList", $commentsList);
+			$this->assign('commentsCount', $commentsCount);
+		}	else {
+			redirect(U('Books/index'), 3, "go to books index");
+		}
+		$this->display();
+}
 
 
-	public function lookNotes($id=1) {
-		// $id = I('post.id');
-
+	public function lookNotes() {
 		$id = I('post.id');		// echo $id;
-		redirect(U('Notes/bookAllNotes', array('bookId' => $id)), 0, 'go to look Notes');
+
+		$book = M('books');
+		$bookInfo = $book->find($id);
+
+		$bookAllNotes = M('notes');
+		$book_all_users_notes_public = "bookid = '$id'";
+		$allNotes = $bookAllNotes->where("$book_all_users_notes_public")->order('create_time desc')->select();
+		$allNotesCount = count($allNotes);
+
+		$this->assign('allNotes', $allNotes);
+		$this->assign('bookInfo', $bookInfo);
+		$this->assign('allNotesCount', $allNotesCount);
+
+		$this.layout(true);
+		$this->display();
 	}
-
-
 	
 }
 

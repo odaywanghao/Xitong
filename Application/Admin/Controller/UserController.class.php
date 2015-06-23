@@ -16,6 +16,7 @@ class UserController extends Controller {
 
 		$this->assign('userAll', $userAll);
 		$this->assign('userCount', $userCount);
+		$this.layout(true);
 		$this->display();
 	}
 
@@ -26,8 +27,13 @@ class UserController extends Controller {
 		redirect(U('User/index'), 0, "delete success");
 	}
 
+	public function manageBook()	{
+		redirect(U('Books/allBooks'), 0, "go to all books");
+	}
+
+
 	public function background() {
-		redirect(U('BackGround/index'), 0, "go to background");
+		redirect(U('BackGround/backInfo'), 0, "go to background");
 	}
 
 	public function logout($error = 0) {

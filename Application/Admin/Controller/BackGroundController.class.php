@@ -81,5 +81,9 @@ class BackGroundController extends Controller {
 		$this->display();
 	}
 
+	public function background() {
+		redirect(U('backInfo'), 0, "redirect to backInfo");
+	}
+
 
 }
