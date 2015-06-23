@@ -54,7 +54,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php $__FOR_START_1382641986__=0;$__FOR_END_1382641986__=$countBooks;for($i=$__FOR_START_1382641986__;$i < $__FOR_END_1382641986__;$i+=1){ ?><tr>
+			<?php $__FOR_START_56207838__=0;$__FOR_END_56207838__=$countBooks;for($i=$__FOR_START_56207838__;$i < $__FOR_END_56207838__;$i+=1){ ?><tr>
 					<td align="center">
 						<img src="/Xitong/Uploads/BookPhotoes/<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'1.jpg'); ?>">
 					</td>

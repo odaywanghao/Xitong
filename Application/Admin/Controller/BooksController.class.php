@@ -12,6 +12,9 @@ class BooksController extends Controller {
 		redirect(U('Books/allBooks'), 0, "redirect to allBooks");
 	}
 
+	public function logout() {
+		redirect(U('User/logout'), 0, "logout");
+	}
 
 	public function manageUser()	{
 		$admin = session('admin');
