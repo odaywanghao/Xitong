@@ -59,9 +59,8 @@ class UserController extends Controller {
 	}
 
 	public function logout($error = 0) {
-		session('weread', null);
+		session('admin', null);
 		redirect(U('User/index'), 0, "loginout success!");
-
 	}
 
 	public function login() {

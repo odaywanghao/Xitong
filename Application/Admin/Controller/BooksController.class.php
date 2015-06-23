@@ -177,6 +177,10 @@ class BooksController extends Controller {
 		$this.layout(true);
 		$this->display();
 	}
+
+	public function logout() {
+		redirect(U('User/logout'), 0, "go to logout");
+	}
 	
 }
 
