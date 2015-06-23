@@ -35,6 +35,16 @@ class UserController extends Controller {
 		}
 
 		$userModel = M('users');
+		$userInfo = $userModel->find($id);
+		$username = $userInfo['username'];
+		$commentModel = M('comments');
+		$noteModel = M('notes');
+		$zanModel = M('bookzan');
+		$username_sql = "username = '$username'";
+		
+		$commentModel->where("$username_sql")->delete();
+		$zanModel->where("$username_sql")->delete();
+		$noteModel->where("$username_sql")->delete();
 		$userModel->delete($id);
 		redirect(U('User/index'), 0, "delete success");
 	}

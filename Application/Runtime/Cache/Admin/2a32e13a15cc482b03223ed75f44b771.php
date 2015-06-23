@@ -70,7 +70,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php $__FOR_START_725431025__=0;$__FOR_END_725431025__=$commentsCount;for($i=$__FOR_START_725431025__;$i < $__FOR_END_725431025__;$i+=1){ ?><tr>
+			<?php $__FOR_START_1474107669__=0;$__FOR_END_1474107669__=$commentsCount;for($i=$__FOR_START_1474107669__;$i < $__FOR_END_1474107669__;$i+=1){ ?><tr>
 					<td align="center"><img src="<?php echo ((isset($userHead ) && ($userHead !== ""))?($userHead ):'/Xitong/Public/img/1.jpg'); ?>" alt="用户头像" /></td>
 					<td align="center"><a href="#"><?php echo ($commentsList[$i][username]); ?></a></td>
 					<td align="center"><p><?php echo ($commentsList[$i][comment]); ?></p></td>

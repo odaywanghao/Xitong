@@ -13,11 +13,12 @@
   <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">书语后台</a>
-    <ul class="nav">
+    <ul style="float: none" class="nav">
       <li><a href="/Xitong/index.php/Admin/Books/background">首 页</a></li>
       <li><a href="/Xitong/index.php/Admin/Books/manageUser">管理用户</a></li>
       <li><a href="/Xitong/index.php/Admin/Books/manageBook">管理图书</a></li>
-      <li><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
+      <li style="float: right"><a href="/Xitong/index.php/Admin/Books/logout">登 出</a></li>
+      <li style="float: right; font-size: 12px; margin-right: 50px"><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
     </ul>
   </div>
 </div>
@@ -73,7 +74,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php $__FOR_START_844144817__=0;$__FOR_END_844144817__=$allNotesCount;for($i=$__FOR_START_844144817__;$i < $__FOR_END_844144817__;$i+=1){ ?><tr>
+			<?php $__FOR_START_916943526__=0;$__FOR_END_916943526__=$allNotesCount;for($i=$__FOR_START_916943526__;$i < $__FOR_END_916943526__;$i+=1){ ?><tr>
 					<td align="center"><img src="<?php echo ((isset($userHead ) && ($userHead !== ""))?($userHead ):'/Xitong/Public/img/1.jpg'); ?>" alt="用户头像" /></td>
 					<td align="center"><a href="#"><?php echo ($allNotes[$i][username]); ?></a></td>
 					<td align="center"><?php echo ($allNotes[$i][chapter]); ?></td>
