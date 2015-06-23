@@ -55,10 +55,10 @@ class BackGroundController extends Controller {
 
 		$this->assign('nowTime', $now_time);
 
-		$this->assign('userCount', $userCount);
-		$this->assign('bookCount', $bookCount);
-		$this->assign('noteCount', $noteCount);
-		$this->assign('commentCount', $commentCount);
+		$this->assign('userAllCount', $userAllCount);
+		$this->assign('bookAllCount', $bookAllCount);
+		$this->assign('noteAllCount', $noteAllCount);
+		$this->assign('commentAllCount', $commentAllCount);
 
 		$this->assign('noteCount', $noteCount);
 		$this->assign('bookCount', $bookCount);
@@ -70,6 +70,7 @@ class BackGroundController extends Controller {
 		$this->assign('bookEveryCount', $bookEveryCount);
 		$this->assign('userEveryCount', $userEveryCount);
 
+		$this.layout(true);
 		$this->display();
 	}
 
