@@ -192,5 +192,8 @@ class BooksController extends Controller {
 		$this->display();
 	}
 
+	public function logout() {
+		redirect(U('User/logout'), 0, "logout");
+	}
 }
 

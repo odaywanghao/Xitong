@@ -6,9 +6,9 @@ class BackGroundController extends Controller {
 		redirect(U('BackGround/backInfo'), 0, "redirect to backInfo");
 	}
 
-	// public function logout() {
-	// 	redirect(U('User/logout'), 0, "logout");
-	// }
+	public function logout() {
+		redirect(U('User/logout'), 0, "logout");
+	}
 
 	public function manageUser()  {
 		redirect(U('User/manageUser'), 0, "go to manageUser");
