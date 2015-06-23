@@ -3,18 +3,37 @@ namespace Admin\Controller;
 use Think\Controller;
 class BackGroundController extends Controller {
 	public function index() {
+		$admin = session('admin');
+		if ($admin != "weread") {
+			redirect(U('User/login'), 0, "go to login");
+		}
+
 		redirect(U('BackGround/backInfo'), 0, "redirect to backInfo");
 	}
 
 	public function manageUser()  {
+		$admin = session('admin');
+		if ($admin != "weread") {
+			redirect(U('User/login'), 0, "go to login");
+		}
+
 		redirect(U('User/manageUser'), 0, "go to manageUser");
 	}
 
 	public function manageBook()	{
+		$admin = session('admin');
+		if ($admin != "weread") {
+			redirect(U('User/login'), 0, "go to login");
+		}
+
 		redirect(U('Books/allBooks'), 0, "go to all books");
 	}
 
 	public function backInfo() {
+		$admin = session('admin');
+		if ($admin != "weread") {
+			redirect(U('User/login'), 0, "go to login");
+		}
 
 		$userModel = M('users');
 		$noteModel = M('notes');
@@ -82,6 +101,11 @@ class BackGroundController extends Controller {
 	}
 
 	public function background() {
+		$admin = session('admin');
+		if ($admin != "weread") {
+			redirect(U('User/login'), 0, "go to login");
+		}
+		
 		redirect(U('backInfo'), 0, "redirect to backInfo");
 	}
 
