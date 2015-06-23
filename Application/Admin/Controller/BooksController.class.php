@@ -11,6 +11,50 @@ class BooksController extends Controller {
 		redirect(U('Notes/myAllNotes'), 0, 'redirect to myAllNotes');
 	}
 
+
+	public function addBook() {
+		$this.layout(true);
+		$this->display();
+	}
+
+	public function addBookin() {
+
+		// redirect(U('Books/allBooks'), 0, 'go to all books');
+
+		$upload = new \Think\Upload();// 实例化上传类
+    	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+    	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
+    	$upload->rootPath  =     './Uploads/BookPhotoes/'; // 设置附件上传根目录
+    	$upload->savePath  =     ''; // 设置附件上传（子）目录
+    	$upload->callback  = 	  true;
+    	$upload->autoSub 	 = 	false;
+    	if(!$info) {// 上传错误提示错误信息
+        	$error = $upload->getError();
+        	if ($error == "没有文件被上传！") {
+        		$photo = NULL;
+        	}	else {
+        		$photo = NULL;
+        			// $this->error($upload->getError);
+        	}
+    	}else{// 上传成功
+	        $photo = $info['photo']['savename'];
+    	}
+
+		$bookModel = M('books');
+		$data['bookname'] = I('post.bookname');
+		$data['press'] = I('post.press');
+		$data['ISBN'] = I('post.ISBN');
+		$data['picture'] = $photo;
+		$data['author'] = I('post.author');
+		$data['summary'] = I('post.summary');
+		$data['create_time'] = NOW_TIME;
+
+		$bookModel->add($data);
+		// redirect(U('index'), 0, "add success, go to see my all books");
+		redirect(U('Books/allBooks'), 0, 'go to all books');
+
+	}
+
 	public function allNotes()  {
 		redirect(U('Notes/allNotes'), 0, 'redirect to allNotes');
 	}

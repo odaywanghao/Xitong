@@ -43,10 +43,16 @@
 
 	
 
+<form method="post" action="/Xitong/index.php/Admin/Books/addBook">
+					<input type="submit" value="addBook" />
+</form>
+
+
+
 <div class="container" id="bookList">
 	<!-- 书的列表 -->
 	<h5>书的列表</h5>
-	<?php $__FOR_START_23689250__=0;$__FOR_END_23689250__=$countBooks;for($i=$__FOR_START_23689250__;$i < $__FOR_END_23689250__;$i+=1){ ?><div id="book">
+	<?php $__FOR_START_1909704370__=0;$__FOR_END_1909704370__=$countBooks;for($i=$__FOR_START_1909704370__;$i < $__FOR_END_1909704370__;$i+=1){ ?><div id="book">
 			<h5><?php echo ($allBooks[$i][bookname]); ?></h5>
 			<img src="<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'/Xitong/Public/img/1.jpg'); ?>">
 			<div id="bookInfo">
@@ -57,15 +63,15 @@
 			</div>
 			<div class="form">
 				<form method="post" action="/Xitong/index.php/Admin/Books/lookComments">
-					<input type="hidden" name="id" value="<?php echo ($allBooks[0][id]); ?>" />
+					<input type="hidden" name="id" value="<?php echo ($allBooks[$i][id]); ?>" />
 					<input type="submit" value="<<< 查看书评" />
 				</form>
 				<form method="post" action="/Xitong/index.php/Admin/Books/deleteBook">
-					<input type="hidden" name="id" value="<?php echo ($allBooks[0][id]); ?>" />
+					<input type="hidden" name="id" value="<?php echo ($allBooks[$i][id]); ?>" />
 					<input type="submit" value="<<  删除书籍  >>" />
 				</form>
 				<form method="post" action="/Xitong/index.php/Admin/Books/lookNotes">
-					<input type="hidden" name="id" value="<?php echo ($allBooks[0][id]); ?>" />
+					<input type="hidden" name="id" value="<?php echo ($allBooks[$i][id]); ?>" />
 					<input type="submit" value="查看笔记 >>>" />
 				</form>
 			</div>
