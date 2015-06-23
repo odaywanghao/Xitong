@@ -89,8 +89,4 @@ class BackGroundController extends Controller {
 		redirect(U('backInfo'), 0, "redirect to backInfo");
 	}
 
-	public function logout() {
-		redirect(U('User/logout'), 0, "go to logout");
-	}
-
 }
