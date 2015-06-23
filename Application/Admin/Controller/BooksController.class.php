@@ -11,6 +11,17 @@ class BooksController extends Controller {
 		redirect(U('Notes/myAllNotes'), 0, 'redirect to myAllNotes');
 	}
 
+	public function manageUser()	{
+		redirect(U('User/manageUser'), 0, "go to all books");
+	}
+
+	public function manageBook()	{
+		redirect(U('allBooks'), 0, "go to all books");
+	}
+
+	public function background() {
+		redirect(U('BackGround/backInfo'));
+	}
 
 	public function addBook() {
 		$this.layout(true);
