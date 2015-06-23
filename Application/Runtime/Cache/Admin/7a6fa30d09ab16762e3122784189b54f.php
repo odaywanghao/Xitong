@@ -13,11 +13,12 @@
   <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">书语后台</a>
-    <ul class="nav">
+    <ul style="float: none" class="nav">
       <li><a href="/Xitong/index.php/Admin/Books/background">首 页</a></li>
       <li><a href="/Xitong/index.php/Admin/Books/manageUser">管理用户</a></li>
       <li><a href="/Xitong/index.php/Admin/Books/manageBook">管理图书</a></li>
-      <li><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
+      <li style="float: right"><a href="/Xitong/index.php/Admin/Books/logout">登 出</a></li>
+      <li style="float: right; font-size: 12px; margin-right: 50px"><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
     </ul>
   </div>
 </div>
@@ -54,7 +55,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<?php $__FOR_START_56207838__=0;$__FOR_END_56207838__=$countBooks;for($i=$__FOR_START_56207838__;$i < $__FOR_END_56207838__;$i+=1){ ?><tr>
+			<?php $__FOR_START_143621733__=0;$__FOR_END_143621733__=$countBooks;for($i=$__FOR_START_143621733__;$i < $__FOR_END_143621733__;$i+=1){ ?><tr>
 					<td align="center">
 						<img src="/Xitong/Uploads/BookPhotoes/<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'1.jpg'); ?>">
 					</td>

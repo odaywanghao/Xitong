@@ -58,10 +58,10 @@ class UserController extends Controller {
 		redirect(U('BackGround/backInfo'), 0, "go to background");
 	}
 
-	public function logout() {
-		session('weread', null);
-		redirect(U('User/index'), 0, "loginout success!");
 
+	public function logout() {
+		session('admin', null);
+		redirect(U('User/index'), 0, "loginout success!");
 	}
 
 	public function login() {
