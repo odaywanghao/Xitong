@@ -16,7 +16,7 @@
 	<for start="0" end="$countBooks">
 		<div id="book">
 			<h5>{$allBooks[$i][bookname]}</h5>
-			<img src="{$allBooks[$i][picture] | default='__PUBLIC__/img/1.jpg'}">
+			<img src="/Xitong/Uploads/BookPhotoes/{$allBooks[$i][picture] | default='__PUBLIC__/img/1.jpg'}">
 			<div id="bookInfo">
 				<p><span>作&ensp;者:</span> {$allBooks[$i][author]}</p>
 				<p><span>出版社:</span> {$allBooks[$i][press]}</p>

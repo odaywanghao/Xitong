@@ -20,7 +20,7 @@ class commentsModel extends Model {
 
 	protected $_auto    =   array(
         array('create_time','time',1,'function'),
-        array('bookid', 'getBookid', 3, 'callback'),
+        // array('bookid', 'getBookid', 3, 'callback'),
         array('username', 'getUsername', 3, 'callback')
         );
     // 定义自动完成
