@@ -36,54 +36,30 @@ nowTime:{$nowTime}<br/>
 	<div class="canvas">
 		<canvas id="noteCount" width="400" height="400" data-data="{$arrayNoteCount}"></canvas>
 		<h3>笔记数目统计</h3>
-			<!-- <h1>Notes</h1><br/>
-			noteAllCount:{$noteAllCount}<br/>
-			noteLast1DayCount:{$noteCount[day]}<br/>
-			noteLast1WeekCount:{$noteCount[week]}<br/>
-			noteLast1WeelCount:{$noteCount[month]}<br/> -->
 	</div>
 	<div class="canvas">
 		<canvas id="bookCount" width="400" height="400" data-data="{$arrayBook}"></canvas>
 		<h3>书数目统计</h3>
-			<!-- 
-			<h1>books</h1><br/>
-			nowTime:{$nowTime}<br/>
-			bookLast1DayCount:{$bookCount[day]}<br/>
-			bookLast1DayCount:{$bookCount[week]}<br/>
-			bookLast1WeelCount:{$bookCount[month]}<br/>
-			bookAllCount:{$bookAllCount}<br/> -->
 	</div>
 </div>
+
+<form method="post" action="__URL__/manageUser">
+	<input type="submit" value="管理用户" />
+</form>
+
+
+<form method="post" action="__URL__/manageBook">
+	<input type="submit" value="管理图书" />
+</form>
 
 <div class="container">
 	<div class="canvas">
 		<canvas id="commentCount" width="400" height="400" data-data="{$arrayComment}"></canvas>
 		<h3>评论数目统计</h3>
-			<!-- <h1>comments</h1><br/>
-			commentAllCount:{$commentAllCount}<br/>
-			nowTime:{$nowTime}<br/>
-			commentLast1DayCount:{$commentCount[day]}<br/>
-			commentLast1WeekCount:{$commentCount[week]}<br/>
-			commentLast1WeelCount:{$commentCount[month]}<br/> -->
 	</div>
 	<div class="canvas">
 		<canvas id="noteEveryCount" width="400" height="400" data-data="{$arrayNoteEvery}"></canvas>
 		<h3>笔记数目统计</h3>
-			<!-- <h1>note everyCount</h1>
-			1:{$noteEveryCount[1]}<br/>
-			2:{$noteEveryCount[2]}<br/>
-			3:{$noteEveryCount[3]}<br/>
-			4:{$noteEveryCount[4]}<br/>
-			5:{$noteEveryCount[5]}<br/>
-			6:{$noteEveryCount[6]}<br/>
-			7:{$noteEveryCount[7]}<br/>
-			8:{$noteEveryCount[8]}<br/>
-			9:{$noteEveryCount[9]}<br/>
-			10:{$noteEveryCount[10]}<br/>
-			11:{$noteEveryCount[11]}<br/>
-			12:{$noteEveryCount[12]}<br/>
-			13:{$noteEveryCount[13]}<br/>
-			<br/> -->
 	</div>
 </div>
 

@@ -5,6 +5,12 @@
 <link rel="stylesheet/less" type="text/css" href="__PUBLIC__/css/book.less">
 <include file="Common/header" />
 
+<form method="post" action="__URL__/addBook">
+					<input type="submit" value="addBook" />
+</form>
+
+
+
 <div class="container" id="bookList">
 	<!-- 书的列表 -->
 	<h5>书的列表</h5>
@@ -20,11 +26,15 @@
 			</div>
 			<div class="form">
 				<form method="post" action="__URL__/lookComments">
-					<input type="hidden" name="id" value="{$allBooks[0][id]}" />
+					<input type="hidden" name="id" value="{$allBooks[$i][id]}" />
 					<input type="submit" value="<<< 查看书评" />
 				</form>
+				<form method="post" action="__URL__/deleteBook">
+					<input type="hidden" name="id" value="{$allBooks[$i][id]}" />
+					<input type="submit" value="<<  删除书籍  >>" />
+				</form>
 				<form method="post" action="__URL__/lookNotes">
-					<input type="hidden" name="id" value="{$allBooks[0][id]}" />
+					<input type="hidden" name="id" value="{$allBooks[$i][id]}" />
 					<input type="submit" value="查看笔记 >>>" />
 				</form>
 			</div>

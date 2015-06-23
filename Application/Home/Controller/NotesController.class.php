@@ -125,7 +125,7 @@ class NotesController extends Controller {
 		// first identify login or not
 
 		$upload = new \Think\Upload();// 实例化上传类
-    	$upload->maxSize   =     3145728 ;// 设置附件上传大小
+    	$upload->maxSize   =     31457289999999 ;// 设置附件上传大小
     	$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
     	$upload->rootPath  =     './Uploads/NotePhotoes/'; // 设置附件上传根目录
     	$upload->savePath  =     ''; // 设置附件上传（子）目录
@@ -139,6 +139,7 @@ class NotesController extends Controller {
         	if ($error == "没有文件被上传！") {
         		$photo = NULL;
         	}	else {
+        			// echo "erro1 ";
         			$this->error($upload->getError);
         	}
     	}else{// 上传成功
@@ -163,18 +164,6 @@ class NotesController extends Controller {
 		$username = getUsername();
 		$data['bookid'] = $bookId;
 		$data['username'] = $username;
-		// $chapter = I('post.chapter');
-		// $page = I('post.page');
-		// $note = I('post.note');
-		// if (!isset($chapter)) {
-		// 	redirect(U('Notes/addNote', array('error' => 1)), 0, "no chapter, go back");
-		// }
-		// if (!isset($page)) {
-		// 	redirect(U('Notes/addNote', array('error' => 2)), 0, "no page, go back");
-		// }
-		// if (!isset($note)) {
-		// 	redirect(U('Notes/addNote', array('error' => 3)), 0, "no note, go back");
-		// }
 		$data['chapter'] = I('post.chapter');
 		$data['page'] = I('post.page');
 		$data['note'] = I('post.note');
@@ -184,7 +173,7 @@ class NotesController extends Controller {
 		// var_dump($data);
 		$noteModel = M('notes');
 		$noteModel->add($data);
-		redirect(U('index'), 0, "add success, go to see my all notes");
+		redirect(U('Notes/index'), 0, "add success, go to see my all notes");
 
 	}
 

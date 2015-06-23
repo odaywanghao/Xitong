@@ -1,0 +1,15 @@
+<h1>Users </h1><br/>
+userCount:{$userCount}
+<h2>firstUser</h2><br/>
+username:{$userAll[0][username]}<br/>
+password:{$userAll[0][password]}<br/>
+email:{$userAll[0][email]}<br/>
+
+<form method="post" action="__URL__/deleteUser">
+					<input type="hidden" name="id" value="{$userAll[0][id]}" />
+					<input type="submit" value="删除用户" />
+</form>
+
+<form method="post" action="__URL__/background">
+					<input type="submit" value="回到首页" />
+</form>
