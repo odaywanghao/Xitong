@@ -19,12 +19,22 @@ function getBookzan() {
 
 function noLogin() {
 	$user = getUsername();
+	// $admin = session('admin');
 	if (isset($user)) {
 		return False;
 	}	else {
 		return True;
 	}
 
+
+function noAdmin() {
+	$admin = session('admin');
+	if ($admin != "weread") {
+		return True;
+	}	else {
+		return False;
+	}
+}
 
 
 function logout() {
