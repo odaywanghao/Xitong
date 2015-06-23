@@ -13,11 +13,12 @@
   <div class="navbar">
   <div class="navbar-inner">
     <a class="brand" href="#">书语后台</a>
-    <ul class="nav">
+    <ul style="float: none" class="nav">
       <li><a href="/Xitong/index.php/Admin/User/background">首 页</a></li>
       <li><a href="/Xitong/index.php/Admin/User/manageUser">管理用户</a></li>
       <li><a href="/Xitong/index.php/Admin/User/manageBook">管理图书</a></li>
-      <li><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
+      <li style="float: right"><a href="/Xitong/index.php/Admin/User/logout">登 出</a></li>
+      <li style="float: right; font-size: 12px; margin-right: 50px"><a href="#">当前时间: <?php echo date("Y-m-d ", $nowTime) ?></a></li>
     </ul>
   </div>
 </div>
@@ -34,33 +35,29 @@
 </script>
   <div>
 
-    <link rel="stylesheet/less" type="text/css" href="/Xitong/Public/css/login.less">
-
+    
 <div class="container">
-  
-	<form class="form-inline" method="post" action="/Xitong/index.php/Admin/User/loginin/<?php echo ($gogo); ?>">
-		<div class="login_img"></div>
+	<form action="/Xitong/index.php/Admin/User/loginin" method="post" class="form-horizontal" role="form">
+	 <div class="form-group">
+	    <label for="username" class="col-sm-2 control-label">用户名</label>
+	    <div class="col-sm-10">
+	       <input type="text" class="form-control" name="username" placeholder="username">
+	    </div>
+	 </div>
+	 <div class="form-group">
+	    <label for="password" class="col-sm-2 control-label">密码 </label>
+	    <div class="col-sm-10">
+	       <input type="password" class="form-control" name="password" placeholder="password">
+	    </div>
+	 </div>
 
-	  <div class="form-group">
-	    <div class="input-group">
-	      <div class="input-group-addon">&ensp;</div>
-	      <input type="text" class="form-control" name="username" id="userName" placeholder="用户名">
+	 <div class="form-group">
+	    <div class="col-sm-10">
+	       <button type="submit" class="btn btn-default">登录</button>
 	    </div>
-	    <div class="input-group">
-	      <div class="input-group-addon">&ensp;</div>
-	      <input type="password" class="form-control" name="password" id="password" placeholder="密码">
-	    </div>
-	  </div>
-	  <button type="submit" class="btn btn-primary">登 录</button>
-	  <a href="<?php echo U(register);?>" class="signUp">注 册</a>
+	 </div>
 	</form>
-
 </div>
-
-<script type="text/javascript">
-	$('body').height($(window).height());
-</script>
-
 
   </div>
 </body>

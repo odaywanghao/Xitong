@@ -60,7 +60,7 @@ class UserController extends Controller {
 
 
 	public function logout() {
-		session('weread', null);
+		session('admin', null);
 		redirect(U('User/index'), 0, "loginout success!");
 	}
 
