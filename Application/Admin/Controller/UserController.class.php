@@ -58,8 +58,9 @@ class UserController extends Controller {
 		redirect(U('BackGround/backInfo'), 0, "go to background");
 	}
 
-	public function logout($error = 0) {
-		session('admin', null);
+
+	public function logout() {
+		session('weread', null);
 		redirect(U('User/index'), 0, "loginout success!");
 	}
 
