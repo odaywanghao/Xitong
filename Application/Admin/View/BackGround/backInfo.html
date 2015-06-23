@@ -1,10 +1,3 @@
-<h1>Users </h1><br/>
-userCount:{$userCount}
-<h2>firstUser</h2><br/>
-username:{$userAll[0][username]}<br/>
-password:{$userAll[0][password]}<br/>
-email:{$userAll[0][email]}<br/>
-
 <h1>Notes</h1><br/>
 noteAllCount:{$noteAllCount}<br/>
 nowTime:{$nowTime}<br/>
@@ -12,23 +5,17 @@ noteLast1DayCount:{$noteCount[day]}<br/>
 noteLast1WeekCount:{$noteCount[week]}<br/>
 noteLast1WeelCount:{$noteCount[month]}<br/>
 
-<h1>books</h1><br/>
-bookAllCount:{$bookAllCount}<br/>
-nowTime:{$nowTime}<br/>
-bookLast1DayCount:{$bookCount[day]}<br/>
-bookLast1WeekCount:{$bookCount[week]}<br/>
-bookLast1WeelCount:{$bookCount[month]}<br/>
+<form method="post" action="__URL__/manageUser">
+	<input type="submit" value="管理用户" />
+</form>
+
+
+<form method="post" action="__URL__/manageBook">
+	<input type="submit" value="管理图书" />
+</form>
 
 
 
-
-
-<h1>comments</h1><br/>
-commentAllCount:{$commentAllCount}<br/>
-nowTime:{$nowTime}<br/>
-commentLast1DayCount:{$commentCount[day]}<br/>
-commentLast1WeekCount:{$commentCount[week]}<br/>
-commentLast1WeelCount:{$commentCount[month]}<br/>
 
 
 <h1>note everyCount</h1>

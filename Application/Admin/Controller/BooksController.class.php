@@ -15,6 +15,21 @@ class BooksController extends Controller {
 		redirect(U('Notes/allNotes'), 0, 'redirect to allNotes');
 	}
 
+	public function deleteBook($id) {
+		$bookModel = M('books');
+		$noteModel = M('notes');
+		$commentModel = M('comments');
+		$zanModel = M('bookzan');
+		$bookid_sql = "bookid = '$id'";
+		
+		$bookModel->delete($id);
+		$noteModel->where("$bookid_sql")->delete();
+		$commentModel->where("$bookid_sql")->delete();
+		$zanModel->where("$bookid_sql")->delete();
+		redirect(U('Books/allBooks'), 0, 'delete success');
+	}
+
+
 	public function allBooks() {
 		$bookModel = M('books');
 		$allBooks = $bookModel->order('id')->select();
@@ -36,7 +51,7 @@ class BooksController extends Controller {
 		// $id = I('post.id');
 		$_SESSION['bookid'] = $id;
 		// echo $id;
-		redirect(U('Notes/index'), 0, 'go to look Notes');
+		redirect(U('Notes/bookAllNotes', array('id' => $id)), 0, 'go to look Notes');
 	}
 
 

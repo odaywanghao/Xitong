@@ -6,6 +6,14 @@ class BackGroundController extends Controller {
 		redirect(U('BackGround/backInfo'), 0, "redirect to backInfo");
 	}
 
+	public function manageUser()  {
+		redirect(U('User/manageUser'), 0, "go to manageUser");
+	}
+
+	public function manageBook()	{
+		redirect(U('Books/allBooks'), 0, "go to all books");
+	}
+
 	public function backInfo() {
 
 		$userModel = M('users');
@@ -18,7 +26,6 @@ class BackGroundController extends Controller {
 		$bookAllCount = $bookModel->count();
 		$userAllCount = $userModel->count();
 		
-
 
 		// $note_today_sql
 		$now_time = NOW_TIME;
@@ -55,10 +62,10 @@ class BackGroundController extends Controller {
 
 		$this->assign('nowTime', $now_time);
 
-		$this->assign('userCount', $userCount);
-		$this->assign('bookCount', $bookCount);
-		$this->assign('noteCount', $noteCount);
-		$this->assign('commentCount', $commentCount);
+		$this->assign('userAllCount', $userAllCount);
+		$this->assign('bookAllCount', $bookAllCount);
+		$this->assign('noteAllCount', $noteAllCount);
+		$this->assign('commentAllCount', $commentAllCount);
 
 		$this->assign('noteCount', $noteCount);
 		$this->assign('bookCount', $bookCount);
@@ -72,5 +79,6 @@ class BackGroundController extends Controller {
 
 		$this->display();
 	}
+
 
 }

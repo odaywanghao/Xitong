@@ -3,8 +3,31 @@ namespace Admin\Controller;
 use Think\Controller;
 class UserController extends Controller {
 	public function index() {
-		redirect(U('Comments/comments'), 0, "redirect to comments");
+		redirect(U('User/manageUser'), 0, "redirect to manageUser");
 		// echo "hello world";
+	}
+
+
+	public function manageUser() {
+		// echo "string";
+		$userModel = M('users');
+		$userAll = $userModel->order('create_time', desc)->select();
+		$userCount = $userModel->count();
+
+		$this->assign('userAll', $userAll);
+		$this->assign('userCount', $userCount);
+		$this->display();
+	}
+
+	public function deleteUser($id) {
+
+		$userModel = M('users');
+		$userModel->delete($id);
+		redirect(U('User/index'), 0, "delete success");
+	}
+
+	public function background() {
+		redirect(U('BackGround/index'), 0, "go to background");
 	}
 
 	public function logout($error = 0) {

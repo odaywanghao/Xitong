@@ -1,0 +1,462 @@
+[ 2015-06-23T00:02:43+08:00 ] 172.18.32.225 /Xitong/index.php/Notes/bookAllNotes.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `books` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `notes` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `notes` WHERE ( bookid = '1' and public = 1 ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+NOTIC: [4096] Object of class Home\Controller\NotesController could not be converted to string /var/www/Xitong/Application/Home/Controller/NotesController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 59 行.
+NOTIC: [8] Use of undefined constant chapter - assumed 'chapter' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 60 行.
+NOTIC: [8] Use of undefined constant page - assumed 'page' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 61 行.
+NOTIC: [8] Use of undefined constant note - assumed 'note' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 64 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant photo - assumed 'photo' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 65 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/41158c3fee0128cf822e518a0b2907ba.php 第 66 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2015-06-23T09:07:45+08:00 ] 127.0.0.1 /Xitong/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010309s ]
+
+[ 2015-06-23T09:07:45+08:00 ] 127.0.0.1 /Xitong/index.php/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+NOTIC: [4096] Object of class Home\Controller\CommentsController could not be converted to string /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `books` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `comments` WHERE ( bookid = '1' ) ORDER BY create_time desc  [ RunTime:0.0185s ]
+SQL: SHOW COLUMNS FROM `bookzan` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( bookid = '1' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( username = '' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant comments - assumed 'comments' /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Use of undefined constant bookname - assumed 'bookname' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 49 行.
+NOTIC: [8] Use of undefined constant picture - assumed 'picture' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 50 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 52 行.
+NOTIC: [8] Use of undefined constant press - assumed 'press' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 53 行.
+NOTIC: [8] Use of undefined constant isbn - assumed 'isbn' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 54 行.
+NOTIC: [8] Use of undefined constant summary - assumed 'summary' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 61 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001860s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001921s ]
+
+[ 2015-06-23T10:49:19+08:00 ] 127.0.0.1 /Xitong/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002091s ]
+
+[ 2015-06-23T10:49:19+08:00 ] 127.0.0.1 /Xitong/index.php/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000180s ]
+NOTIC: [4096] Object of class Home\Controller\CommentsController could not be converted to string /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `books` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `comments` WHERE ( bookid = '1' ) ORDER BY create_time desc  [ RunTime:0.0186s ]
+SQL: SHOW COLUMNS FROM `bookzan` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( bookid = '1' ) LIMIT 1   [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( username = '' ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant comments - assumed 'comments' /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Use of undefined constant bookname - assumed 'bookname' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 49 行.
+NOTIC: [8] Use of undefined constant picture - assumed 'picture' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 50 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 52 行.
+NOTIC: [8] Use of undefined constant press - assumed 'press' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 53 行.
+NOTIC: [8] Use of undefined constant isbn - assumed 'isbn' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 54 行.
+NOTIC: [8] Use of undefined constant summary - assumed 'summary' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 61 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006180s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2015-06-23T10:49:27+08:00 ] 127.0.0.1 /Xitong/index.php/Home/Comments/comments.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+NOTIC: [4096] Object of class Home\Controller\CommentsController could not be converted to string /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 29 行.
+SQL: SHOW COLUMNS FROM `books` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `books` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comments` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `comments` WHERE ( bookid = '1' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `bookzan` [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( bookid = '1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `bookzan` WHERE ( username = '' ) LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant comments - assumed 'comments' /var/www/Xitong/Application/Home/Controller/CommentsController.class.php 第 68 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Use of undefined constant bookname - assumed 'bookname' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 49 行.
+NOTIC: [8] Use of undefined constant picture - assumed 'picture' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 50 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 52 行.
+NOTIC: [8] Use of undefined constant press - assumed 'press' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 53 行.
+NOTIC: [8] Use of undefined constant isbn - assumed 'isbn' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 54 行.
+NOTIC: [8] Use of undefined constant summary - assumed 'summary' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 61 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 79 行.
+NOTIC: [8] Use of undefined constant comment - assumed 'comment' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 80 行.
+NOTIC: [8] Use of undefined constant create_time - assumed 'create_time' /var/www/Xitong/Application/Runtime/Cache/Home/3c2d225e32d957828263d2fa9c9c1842.php 第 81 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
