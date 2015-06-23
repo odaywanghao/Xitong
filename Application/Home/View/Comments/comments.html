@@ -43,7 +43,7 @@
 			<div>
 				<a href="#">{$commentsList[$i][username]}</a>
 				<p>{$commentsList[$i][comment]}</p>
-				<span>{$commentsList[$i][create_time]}</span>
+				<span><?php echo date("Y-m-d ", $commentsList[$i][create_time]) ?></span>
 			</div>
 		</div>
 	</for>
