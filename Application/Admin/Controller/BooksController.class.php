@@ -12,8 +12,19 @@ class BooksController extends Controller {
 		redirect(U('Books/allBooks'), 0, "redirect to allBooks");
 	}
 
-	public function logout() {
-		redirect(U('User/logout'), 0, "logout");
+
+	public function deleteComment() {
+		$commentModel = M('comments');
+		$id = I('post.id');
+		$commentModel->delete($id);
+		// redirect(U('Books/index'), 0, 'go to books index');
+	}
+
+	public function deleteNote()  {
+		$noteModel = M('notes');
+		$id = I('post.id');
+		$noteModel->delete($id);
+		redirect(U('Books/index'), 0, 'go to books index');
 	}
 
 	public function manageUser()	{
