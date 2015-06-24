@@ -17,7 +17,7 @@ class NotesController extends Controller {
 	}
 
 
-	public function bookAllNotes() {
+	public function bookAllNotes($id = 1) {
 		// if (noLogin()) {
 		// 	redirect(U('User/login', array("error" => 3)), 0, "go to login");
 		// }
@@ -29,9 +29,9 @@ class NotesController extends Controller {
 				$bookId = 1;
 		}
 		// get bookId
-
+		$bookId = $id;
 		$book = M('books');
-		$bookInfo = $book->find($bookId);
+		$bookInfo = $book->find($id);
 		// get book information
 
 		$bookAllNotes = M('notes');
