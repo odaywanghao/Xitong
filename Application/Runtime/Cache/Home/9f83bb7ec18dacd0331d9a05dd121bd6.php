@@ -23,7 +23,7 @@
 
 <div id="header">
 	<p>
-		<a href="User/login"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
+		<a href="#"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
 		<?php if(!empty($user)): ?><a href="/Xitong/index.php/Home/Notes/logout">登出</a><?php endif; ?>
 		<a class="showMore" href="#">更多</a>
 	</p>

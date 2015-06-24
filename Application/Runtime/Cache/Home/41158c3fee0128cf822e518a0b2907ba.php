@@ -23,7 +23,7 @@
 
 <div id="header">
 	<p>
-		<a href="User/login"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
+		<a href="#"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
 		<?php if(!empty($user)): ?><a href="/Xitong/index.php/Home/Notes/logout">登出</a><?php endif; ?>
 		<a class="showMore" href="#">更多</a>
 	</p>
@@ -54,15 +54,15 @@
 
 	<!-- 笔记列表 -->
 	<h5>笔记列表</h5>
-	<?php $__FOR_START_744147855__=0;$__FOR_END_744147855__=$allNotesCount;for($i=$__FOR_START_744147855__;$i < $__FOR_END_744147855__;$i+=1){ ?><div class="bookAllNotesList">
+	<?php $__FOR_START_13782833__=0;$__FOR_END_13782833__=$allNotesCount;for($i=$__FOR_START_13782833__;$i < $__FOR_END_13782833__;$i+=1){ ?><div class="bookAllNotesList">
 			<div class="NoteBasic">
-				<a href="profile">用户: <?php echo ($allNotes[$i][username]); ?></a>
+				<a href="#">用户: <?php echo ($allNotes[$i][username]); ?></a>
 				<p>章节:  <?php echo ($allNotes[$i][chapter]); ?></p>
 				<p>页码:  <?php echo ($allNotes[$i][page]); ?></p>
 			</div>
 			<div class="NoteInfo">
 				<p><?php echo ($allNotes[$i][note]); ?></p>
-				<img src="/Xitong/Uploads/NotePhotoes/<?php echo ((isset($allNotes[$i][photo] ) && ($allNotes[$i][photo] !== ""))?($allNotes[$i][photo] ):'55850c7b8b5b3.jpg'); ?>" alt=".">
+				<img src="/Xitong/Uploads/NotePhotoes/<?php echo ((isset($allNotes[$i][photo] ) && ($allNotes[$i][photo] !== ""))?($allNotes[$i][photo] ):'1.jpg'); ?>" alt=".">
 				<span><?php echo date("Y-m-d ", $allNotes[$i][create_time]) ?></span>
 			</div>
 		</div><?php } ?>

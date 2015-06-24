@@ -23,7 +23,7 @@
 
 <div id="header">
 	<p>
-		<a href="User/login"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
+		<a href="#"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
 		<?php if(!empty($user)): ?><a href="/Xitong/index.php/Home/Notes/logout">登出</a><?php endif; ?>
 		<a class="showMore" href="#">更多</a>
 	</p>
@@ -47,7 +47,7 @@
 
 	<!-- 笔记列表 -->
 	<h5>笔记列表</h5>
-	<?php $__FOR_START_1954119810__=0;$__FOR_END_1954119810__=$allNotesCount;for($i=$__FOR_START_1954119810__;$i < $__FOR_END_1954119810__;$i+=1){ ?><div class="bookAllNotesList">
+	<?php $__FOR_START_2022527777__=0;$__FOR_END_2022527777__=$allNotesCount;for($i=$__FOR_START_2022527777__;$i < $__FOR_END_2022527777__;$i+=1){ ?><div class="bookAllNotesList">
 			<div class="NoteBasic">
 				<p>章节:  <?php echo ($allNotes[$i][chapter]); ?></p>
 				<p>页码:  <?php echo ($allNotes[$i][page]); ?></p>

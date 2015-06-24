@@ -23,7 +23,7 @@
 
 <div id="header">
 	<p>
-		<a href="User/login"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
+		<a href="#"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
 		<?php if(!empty($user)): ?><a href="/Xitong/index.php/Home/Comments/logout">登出</a><?php endif; ?>
 		<a class="showMore" href="#">更多</a>
 	</p>
@@ -75,7 +75,7 @@
 
 	<!-- 书评列表 -->
 	<h5>书评列表</h5>
-	<?php $__FOR_START_1412249073__=0;$__FOR_END_1412249073__=$commentsCount;for($i=$__FOR_START_1412249073__;$i < $__FOR_END_1412249073__;$i+=1){ ?><div class="commentsList">
+	<?php $__FOR_START_784251714__=0;$__FOR_END_784251714__=$commentsCount;for($i=$__FOR_START_784251714__;$i < $__FOR_END_784251714__;$i+=1){ ?><div class="commentsList">
 			<img src="<?php echo ((isset($userHead ) && ($userHead !== ""))?($userHead ):'/Xitong/Public/img/1.jpg'); ?>" alt="用户头像" />
 			<div>
 				<a href="#"><?php echo ($commentsList[$i][username]); ?></a>

@@ -35,47 +35,55 @@
 </script>
   <div>
 
-    
-<link rel="stylesheet/less" type="text/css" href="/Xitong/Public/css/manage.less">
+    <?php
+ $user = getUsername(); ?>
+
+<link rel="stylesheet/less" type="text/css" href="/Xitong/Public/css/comments.less">
+<link rel="stylesheet/less" type="text/css" href="/Xitong/Public/css/manageBook.less">
+
 <div class="container">
+	<h3>书的信息</h3>
+	<!-- 书的信息 -->
+	<div id="book">
+		<h5><?php echo ($bookInfo[bookname]); ?></h5>
+		<img src="/Xitong/Uploads/BookPhotoes/<?php echo ((isset($bookInfo[picture] ) && ($bookInfo[picture] !== ""))?($bookInfo[picture] ):'1.jpg'); ?>">
+		<div id="bookInfo">
+			<p><span>作&ensp;者:</span> <?php echo ($bookInfo[author]); ?></p>
+			<p><span>出版社:</span> <?php echo ($bookInfo[press]); ?></p>
+			<p><span>ISBN:</span> <?php echo ($bookInfo[isbn]); ?></p>		
+			<p class="bookSummary"><span>内容简介:</span> <?php echo ($bookInfo[summary]); ?></p>
+		</div>
+	</div>
+</div>
 
-	<a href="/Xitong/index.php/Admin/Books/addBook">添加书籍--></a>
-
-	<h3>书目列表</h3>
+<div class="container">
+	<!-- 笔记列表 -->
+	<h3>笔记列表</h3>
 	<table id="list" class="table table-hover table-condensed">
 		<thead>
 			<tr>
-				<th>封面</th>
-				<th>书名</th>
-				<th>作者</th>
-				<th>出版社</th>
-				<th>ISBN</th>
-				<th>简介</th>
+				<th>用户头像</th>
+				<th>用户名</th>
+				<th>章节</th>
+				<th>页码</th>
+				<th>笔记内容</th>
+				<th>附带图片</th>
+				<th>是否公开</th>
+				<th>记录时间</th>
 				<th>.</th>
 			</tr>
 		</thead>
 		<tbody>
-			<?php $__FOR_START_1706180209__=0;$__FOR_END_1706180209__=$countBooks;for($i=$__FOR_START_1706180209__;$i < $__FOR_END_1706180209__;$i+=1){ ?><tr>
-					<td align="center">
-						<img src="/Xitong/Uploads/BookPhotoes/<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'1.jpg'); ?>">
-
-					</td>
-					<td align="center"><?php echo ($allBooks[$i][bookname]); ?></td>
-					<td align="center"><?php echo ($allBooks[$i][author]); ?></td>
-					<td align="center"><?php echo ($allBooks[$i][press]); ?></td>
-					<td align="center"><?php echo ($allBooks[$i][isbn]); ?></td>
-					<td align="center"><?php echo ($allBooks[$i][summary]); ?></td>
-					<td align="center" class="buttons">
-						<button class="btn-warning" data-toggle="modal" data-target="#delete" data-id="<?php echo ($allBooks[$i][id]); ?>" data-book="<?php echo ($allBooks[$i][bookname]); ?>" data-url="/Xitong/index.php/Admin/Books/deleteBook">Delete</button>
-						<form method="post" action="/Xitong/index.php/Admin/Books/lookComments">
-							<input type="hidden" name="id" value="<?php echo ($allBooks[$i][id]); ?>" />
-							<input class="btn-link" type="submit" value="书评" />
-						</form>
-						<form method="post" action="/Xitong/index.php/Admin/Books/lookNotes">
-							<input type="hidden" name="id" value="<?php echo ($allBooks[$i][id]); ?>" />
-							<input class="btn-link" type="submit" value="笔记" />
-						</form>
-					</td>
+			<?php $__FOR_START_1993892058__=0;$__FOR_END_1993892058__=$allNotesCount;for($i=$__FOR_START_1993892058__;$i < $__FOR_END_1993892058__;$i+=1){ ?><tr>
+					<td align="center"><img src="<?php echo ((isset($userHead ) && ($userHead !== ""))?($userHead ):'/Xitong/Public/img/1.jpg'); ?>" alt="用户头像" /></td>
+					<td align="center"><a href="#"><?php echo ($allNotes[$i][username]); ?></a></td>
+					<td align="center"><?php echo ($allNotes[$i][chapter]); ?></td>
+					<td align="center"><?php echo ($allNotes[$i][page]); ?></td>
+					<td align="center"><?php echo ($allNotes[$i][note]); ?></td>
+					<td align="center"><img src="/Xitong/Uploads/NotePhotoes/<?php echo ((isset($allNotes[$i][photo] ) && ($allNotes[$i][photo] !== ""))?($allNotes[$i][photo] ):'1.jpg'); ?>" alt="."></td>
+					<td align="center"><?php echo ($allNotes[$i]['public']); ?></td>
+					<td align="center"><span><?php echo date("Y-m-d ", $allNotes[$i][create_time]) ?></span></td>
+					<td align="center"><button class="btn-warning" data-toggle="modal" data-target="#delete" data-id="<?php echo ($allNotes[$i][id]); ?>" data-url="/Xitong/index.php/Admin/Books/deleteNote">Delete</button></td>
 				</tr><?php } ?>
 		</tbody>
 	</table>
@@ -85,7 +93,7 @@
 	<div class="modal-dialog">
 	  <div class="modal-content">
 	     <div class="modal-body">
-	        确定要删除图书 “ <span class="delBook"></span> ” 吗？
+	        确定要删除这条笔记吗？
 	     </div>
 	     <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
@@ -97,17 +105,16 @@
 
 <script>
 	$(document).ready(function() {
-		var bookId;
+		var noteId;
 		var url;
 		$('button.btn-warning').click(function() {
-			$('span.delBook').text($(this).attr('data-book'));
-			bookId = $(this).attr('data-id');
+			noteId = $(this).attr('data-id');
 			url = $(this).attr('data-url');
 		});
 		$('.btn-danger').click(function() {
 			$.ajax({
 				type: "post",
-				data: {id: bookId},
+				data: {id: noteId},
 				url: url,
 				success: function(data) {
 					window.location.reload();
@@ -116,6 +123,7 @@
 		});
 	});
 </script>
+
 
 
   </div>

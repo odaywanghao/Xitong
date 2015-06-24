@@ -23,7 +23,7 @@
 
 <div id="header">
 	<p>
-		<a href="User/login"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
+		<a href="#"><?php echo ((isset($user ) && ($user !== ""))?($user ):"未登录"); ?></a>
 		<?php if(!empty($user)): ?><a href="/Xitong/index.php/Home/Books/logout">登出</a><?php endif; ?>
 		<a class="showMore" href="#">更多</a>
 	</p>
@@ -46,7 +46,7 @@
 <div class="container" id="bookList">
 	<!-- 书的列表 -->
 	<h5>书的列表</h5>
-	<?php $__FOR_START_609838982__=0;$__FOR_END_609838982__=$countBooks;for($i=$__FOR_START_609838982__;$i < $__FOR_END_609838982__;$i+=1){ ?><div id="book">
+	<?php $__FOR_START_1492327769__=0;$__FOR_END_1492327769__=$countBooks;for($i=$__FOR_START_1492327769__;$i < $__FOR_END_1492327769__;$i+=1){ ?><div id="book">
 			<h5><?php echo ($allBooks[$i][bookname]); ?></h5>
 			<img src="/Xitong/Uploads/BookPhotoes/<?php echo ((isset($allBooks[$i][picture] ) && ($allBooks[$i][picture] !== ""))?($allBooks[$i][picture] ):'1.jpg'); ?>">
 			<div id="bookInfo">
